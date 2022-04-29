@@ -11,6 +11,10 @@ Basic Structure
 
 </html>
 
+
+Commentary
+<!-- -->
+
 Paragraphs
 The <p> element marks all the text inside it as a distinct paragraph.
 
@@ -49,3 +53,20 @@ Important to seperate content of Html from Css(presenation)
 Trailing Slash to close an element 
 <br> vs <br/>
 It is optional but useful vor visual reference.
+
+Links are created with anchors 
+<a> </a>
+
+- Types of Links -
+
+"Absolute" Use case for directing towards different websites
+Structure: Scheme   + Domain                  + Path
+           https://   Developer.Mozilla.org   /EN-US/DOCS/WEB/HTML
+
+"Relative" Use case for pointing towards another file on the website
+<a href='misc/extras.html'>extras page</a>
+
+Parent Folders
+
+
+
