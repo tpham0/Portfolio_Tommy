@@ -13,7 +13,8 @@ Inline styles should be avoided at all costs because they make it impossible to 
 
 
 
-CSS Structure
+*CSS Structure*
+
 "Selector"  "Property"    "Value"
 body          {color   :  #FF0000  }
 
@@ -34,6 +35,78 @@ List Styles
 define <ul> (unordered list) or <ol> (ordered list)
 list-style-type: circle; (non filled circle)
 list-style-type: lower-roman; (roman numbers)
+
+Block Elements and Inline Elements
+display: block;
+display: inline; 
+
+*CSS Box-Model*
+
+"Content  Padding  Border and Margin"
+
+Content 
+*The text, image, or other media content in the element.*
+
+Padding 
+*The space between the box’s content and its border.*
+
+Padding: Vertical Horizontal
+Padding: Top Right Bottom Left
+
+p {
+  padding: 20px(vertical) 10px (horizontal);  /* Vertical  Horizontal */
+}
+
+or
+
+p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+or 
+
+p {
+  padding: 20px (top) 0(right) 20px(bottom) 10px(left);  /* Top  Right  Bottom  Left */
+}
+
+Border 
+*The line between the box’s padding and margin.*
+
+
+Borders 
+
+Borders:       Size Style Color
+border-bottom: 1px  solid #5D6063;
+
+Margins
+*The space between the box and surrounding boxes.*
+example
+
+p {
+  padding: 20px 0 20px 10px;
+  margin-bottom: 50px;          /* Add this */
+}
+
+Preventing Margin Collapse 
+1. Adding an element with non zero height for consecutive elemnts to collapse into
+2. Only using Padding for spacing instead of margin (cant use padding for anything else)
+3. top or bottom-only convention - If only one vertical margin is defined the elements cant collapse
+
+
+Generic Boxes
+<div> and <span> are “container” elements that don’t have any affect on the semantic structure of an HTML document.^
+hey do, however, provide a hook for adding CSS styles to arbitrary sections of a web page.
+
+Centering with Auto-Margins
+Set block level to "auto" -> margin: 20px auto; (Only works with explicit width)
+
+Resetting Styles 
+* (on top of the page)= Resets the padding and margin properties
+
+
 
 
 
