@@ -68,5 +68,17 @@ Structure: Scheme   + Domain                  + Path
 
 Parent Folders
 
+Selectors 
+ID selectors:     <a id= 'name class= 'name'> href='link' </a> 
+Class selectors:  <div class= 'name'> </div>
+
+CSS Specificity Ranking (High to Low)
+
+#button-2
+.button:link
+a:link and .synopsis em (they’re equal)
+.button
+a
+
 
 

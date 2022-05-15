@@ -106,6 +106,46 @@ Set block level to "auto" -> margin: 20px auto; (Only works with explicit width)
 Resetting Styles 
 * (on top of the page)= Resets the padding and margin properties
 
+Basic Link Styles
+
+:link – A link the user has never visited.
+:visited – A link the user has visited before.
+:hover – A link with the user’s mouse over it.
+:active – A link that’s being pressed down by a mouse (or finger).
+
+example: 
+a: link {
+   color: purple;
+}
+
+Creating Buttons that switch color when hovering and clicking
+
+example:
+  .button:active, 
+  .button:visited:active{
+    color: #FFF;
+    background-color:#5995DA;
+  }
+
+.call-to-action:link,
+.call-to-action:visited{
+  font-style: italic;
+  background-color: #EEB75A;
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover{
+  background-color:#91e09f;
+}
+
+.call-to-action:active,
+.call-to-action:visited:active{
+  background-color: #2a23e0;
+}
+
+Different ways of working 
+Pseudo Classes - :first-of-type / :last-of-type
+ID Selectors   - id attribution on HTML elements
 
 
 
