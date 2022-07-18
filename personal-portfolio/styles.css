@@ -70,8 +70,28 @@
 
   }
 
+  .images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 100px;
+  }
 
+  .images img{
+    height: 100;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateY(-50%);
+    transition: bottom ls, left ls;
+  }
 
- 
+  .images:hover .shape{
+    bottom: 40px;
+  }
+
+  .images:hover .me{
+    left: 45%;
+  }
 
  
