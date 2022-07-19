@@ -85,7 +85,7 @@ Flexbox
 .menu-container {
   display: flex;
 
-Enables the flexbox layout mode, makes it possible to mix and match felxbox with other layout models
+Enables the flexbox layout mode, makes it possible to mix and match flexbox with other layout models
 
  justify-content: 
  center  
